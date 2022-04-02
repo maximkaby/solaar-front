@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  outline: none;
+  -ms-overflow-style: none !important; /* IE and Edge */
+  scrollbar-width: none !important; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none !important;
+  }
+  box-sizing: border-box;
+}
+
+
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+.wrap-app {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('./assets/images/bg.jpg');
+  background-size: cover;
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  flex-direction: column;
+  z-index: 1;
+  background-size: cover;
+  overflow: hidden;
+  transition: all ease 0.33ms;
+  background-color: rgba(0, 0, 0, .6);
+  //opacity: 0.6;
+}
+
+.MuiDrawer-paperAnchorDockedLeft {
+  border-right: 0 !important;
+}
+
+.ohm-card {
+  max-width: 833px;
+  .card-header {
+    width: 100%;
+    min-height: 33px;
+    margin-bottom: 10px;
+    h5 {
+      font-weight: 600 !important;
+    }
+  }
+
+  .help-text {
+    margin: 10px 0px;
+  }
+
+  .data-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 14px;
+    &__staked {
+      margin-bottom: 29px;
+    }
+    & p:nth-of-type(2) {
+      color: #999999;
+    }
+  }
+
+  .data-row-centered {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 12px 0px;
+    .marginedBtn {
+      margin: 0.3rem;
+    }
+  }
+}
+
+.ohm-pairs {
+  display: flex;
+  align-items: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield !important;
+}
+
+a:hover svg {
+  color: inherit;
+}
+
+//.MuiButton-label {
+//  position: relative;
+//  top: 2px;
+//}
+
+.app {
+  .MuiPaper-root {
+    backdrop-filter: none;
+  }
+}
+
+
+
+
+//.MuiFormLabel-root {
+//  top: 2px!important;
+//}
+
+iframe {
+  display: none;
+}
